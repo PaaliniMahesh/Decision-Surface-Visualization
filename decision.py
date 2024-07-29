@@ -35,7 +35,7 @@ def plot_decision_regions(X, y, classifier, resolution=0.02):
                     label=cl, 
                     edgecolor='black')
         
-st.image(r"C:\Users\mahes\OneDrive\Pictures\innomatcis logo.webp")
+st.image(r"innomatcis logo.webp")
 
 st.title("Decision Surface Visualization")
 st.sidebar.header("User's Input")
