@@ -91,11 +91,11 @@ elif dataset == "concerticcir":
 elif dataset == "concerticcir2":
     X, y = make_circles(n_samples=n_samples, noise=noise, factor=factor, random_state=random_state)
 elif dataset == "linearsep":
-    X, y = make_classification(n_samples=n_samples, n_features=2, n_informative=2, n_redundant=n_redundant, n_clusters_per_class=1, random_state=random_state)
+    X, y = make_classification(n_samples=n_samples, n_features=2, n_informative=2, n_redundant=0, n_clusters_per_class=1, random_state=random_state)
 elif dataset == "outlier":
-    X, y = make_classification(n_samples=n_samples, n_features=2, n_informative=2, n_redundant=n_redundant, n_clusters_per_class=1, weights=[0.9, 0.1], flip_y=0, random_state=random_state)
+    X, y = make_classification(n_samples=n_samples, n_features=2, n_informative=2, n_redundant=0, n_clusters_per_class=1, weights=[0.9, 0.1], flip_y=0, random_state=random_state)
 elif dataset == "overlap":
-    X, y = make_classification(n_samples=n_samples, n_features=2, n_informative=2, n_redundant=n_redundant, n_clusters_per_class=1, class_sep=class_sep, random_state=random_state)
+    X, y = make_classification(n_samples=n_samples, n_features=2, n_informative=2, n_redundant=0, n_clusters_per_class=1, class_sep=class_sep, random_state=random_state)
 elif dataset == "xor":
     X, y = np.random.randn(n_samples, 2), np.random.randint(0, 2, n_samples)
     y = y ^ (X[:, 0] * X[:, 1] > 0)
